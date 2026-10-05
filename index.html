@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clicktick Studios — Watch Before You Book</title>
+<meta name="description" content="Unlimited video editing with a single subscription. Watch the breakdown, then book a free strategy call.">
+<link rel="icon" href="assets/logo-orange.png">
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-b586a3e1-4350-45a2-a4a5-6bb911fdbd3b/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --color-bg:#0b1013;
+      --color-surface:#12181c;
+      --color-text:#f2f2f0;
+      --color-accent:#ff4901;
+      --color-accent-300:#ff9a72;
+      --color-accent-400:#ff6b30;
+      --color-divider:rgba(242,242,240,0.12);
+      --font-heading:"Manrope","Inter",system-ui,sans-serif;
+      --font-body:"Inter",system-ui,sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#0b1013;color:#f2f2f0;font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+    a{color:#ff4901;text-decoration:none}
+    a:hover{color:#ff6b30}
+    @keyframes ct-pulse{0%{box-shadow:0 0 0 0 rgba(255,73,1,0.45)}70%{box-shadow:0 0 0 22px rgba(255,73,1,0)}100%{box-shadow:0 0 0 0 rgba(255,73,1,0)}}
+  </style>
+</helmet>
+
+<div style="background:#0b1013;color:#f2f2f0;font-family:var(--font-body);overflow-x:hidden">
+
+  <header style="border-bottom:1px solid rgba(242,242,240,0.08)">
+    <div style="max-width:1000px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;gap:14px">
+      <span style="width:32px;height:32px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none">
+        <img src="assets/logo-orange.png" alt="Clicktick Studios" style="width:19px;height:auto">
+      </span>
+      <span style="font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.14em;text-transform:uppercase">Clicktick <span style="color:#ff4901">Studios</span></span>
+      <span style="margin-left:auto;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(242,242,240,0.62);font-family:var(--font-heading);font-weight:700">Watch before you book</span>
+    </div>
+  </header>
+
+  <section style="position:relative;padding:64px 0 0">
+    <div style="position:absolute;inset:-160px 0 auto 0;height:660px;background:radial-gradient(720px 380px at 50% 0%,rgba(255,73,1,0.18),transparent 70%);pointer-events:none"></div>
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px;position:relative;text-align:center;display:flex;flex-direction:column;align-items:center">
+      <div style="display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border-radius:999px;border:1px solid rgba(255,73,1,0.4);background:rgba(255,73,1,0.08);margin-bottom:26px">
+        <span style="width:6px;height:6px;border-radius:50%;background:#ff4901;flex:none"></span>
+        <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#ff9a72">For founders &amp; creators posting weekly</span>
+      </div>
+      <h1 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(34px,5.4vw,66px);line-height:1;letter-spacing:-0.03em;text-transform:uppercase;margin:0;max-width:22ch;text-wrap:balance">Watch this before you hire another editor</h1>
+      <p style="margin:22px 0 0;max-width:56ch;font-size:18px;line-height:1.6;color:rgba(242,242,240,0.7)">A 6-minute breakdown of the content engine we run for 40+ clients and how it puts 30 finished videos a month on your calendar without you touching a timeline.</p>
+
+      <div style="width:100%;margin-top:40px;position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#0e1417;box-shadow:0 0 0 1px rgba(242,242,240,0.14),0 30px 80px rgba(0,0,0,0.6)">
+        <iframe ref="{{ ytRef }}" src="https://www.youtube.com/embed/rJVGW9R_SBA?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Clicktick Studios — watch before you book" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0;display:block"></iframe>
+        <button type="button" onClick="{{ toggleAudio }}" aria-label="Toggle audio" style="position:absolute;top:14px;right:14px;z-index:2;display:flex;align-items:center;gap:8px;height:40px;padding:0 16px 0 12px;border-radius:999px;border:1px solid rgba(255,73,1,0.6);background:rgba(11,16,19,0.82);backdrop-filter:blur(8px);color:#f2f2f0;cursor:pointer;font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:0.1em;text-transform:uppercase" style-hover="background:#ff4901;color:#0b1013">
+          <sc-if value="{{ isMuted }}" hint-placeholder-val="{{ true }}">
+            <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM245.66,154.34a8,8,0,0,1-11.32,11.32L216,147.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L204.69,136l-18.35-18.34a8,8,0,0,1,11.32-11.32L216,124.69l18.34-18.35a8,8,0,0,1,11.32,11.32L227.31,136Z"></path></svg>
+            <span>Tap for sound</span>
+          </sc-if>
+          <sc-if value="{{ isUnmuted }}" hint-placeholder-val="{{ false }}">
+            <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM192,96a8,8,0,0,1,6,2.7,47.81,47.81,0,0,1,0,58.6,8,8,0,0,1-12-10.6,31.82,31.82,0,0,0,0-37.4A8,8,0,0,1,192,96Zm34.32-28.32a8,8,0,0,1,11.31.3,95.8,95.8,0,0,1,0,120,8,8,0,1,1-11.61-11,79.83,79.83,0,0,0,0-98A8,8,0,0,1,226.32,67.68Z"></path></svg>
+            <span>Sound on</span>
+          </sc-if>
+        </button>
+      </div>
+
+      <a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:58px;padding:0 34px;margin-top:34px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:15px;letter-spacing:0.06em;text-transform:uppercase" style-hover="background:#ff6b30">Book my free strategy call</a>
+      <span style="margin-top:14px;font-size:13px;color:rgba(242,242,240,0.62)">30 minutes · no pitch deck · you leave with a content plan either way</span>
+    </div>
+  </section>
+
+  <section style="padding:80px 0 0">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:24px;padding:32px 0;border-top:1px solid rgba(242,242,240,0.1);border-bottom:1px solid rgba(242,242,240,0.1)">
+        <div style="display:flex;flex-direction:column;gap:6px;padding-left:18px;border-left:2px solid #ff4901">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(34px,4vw,46px);line-height:1;letter-spacing:-0.04em">1000+</span>
+          <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Videos delivered</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;padding-left:18px;border-left:2px solid #ff4901">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(34px,4vw,46px);line-height:1;letter-spacing:-0.04em">24h</span>
+          <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Short-form turnaround</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;padding-left:18px;border-left:2px solid #ff4901">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(34px,4vw,46px);line-height:1;letter-spacing:-0.04em">5x</span>
+          <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Avg. engagement growth</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:84px 0 0">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+        <span style="width:34px;height:1px;background:#ff4901;flex:none"></span>
+        <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.34em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Sound familiar?</span>
+      </div>
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.04;letter-spacing:-0.025em;text-transform:uppercase;margin:0 0 34px;max-width:24ch">You’re not short on ideas. You’re short on finished videos.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+        <div style="padding:22px;border-radius:12px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#ff9a72">The freelancer loop</span>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.68)">One editor, one bottleneck. They go quiet for a week and your whole calendar slips with them.</p>
+        </div>
+        <div style="padding:22px;border-radius:12px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#ff9a72">The revision spiral</span>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.68)">Four rounds of notes over WhatsApp voice memos, and the cut still misses the hook.</p>
+        </div>
+        <div style="padding:22px;border-radius:12px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#ff9a72">The footage graveyard</span>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.68)">Months of recordings sitting on a drive because nobody owns turning them into posts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:84px 0 0">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+        <span style="width:34px;height:1px;background:#ff4901;flex:none"></span>
+        <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.34em;text-transform:uppercase;color:rgba(242,242,240,0.62)">What you get</span>
+      </div>
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.04;letter-spacing:-0.025em;text-transform:uppercase;margin:0 0 34px">One subscription. The whole edit stack.</h2>
+      <div style="display:grid;gap:0">
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:26px 0;border-top:1px solid rgba(242,242,240,0.1)">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:14px;color:#ff4901;letter-spacing:0.06em;padding-top:5px">01</span>
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;min-width:0">
+            <h3 style="flex:0 1 260px;min-width:200px;font-family:var(--font-heading);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:-0.01em;margin:0">Short-Form Edits</h3>
+            <p style="flex:1 1 300px;min-width:0;margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.64)">Reels, Shorts, TikToks — punchy cuts engineered for the scroll. As fast as 24 hours.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:26px 0;border-top:1px solid rgba(242,242,240,0.1)">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:14px;color:#ff4901;letter-spacing:0.06em;padding-top:5px">02</span>
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;min-width:0">
+            <h3 style="flex:0 1 260px;min-width:200px;font-family:var(--font-heading);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:-0.01em;margin:0">Long-Form Edits</h3>
+            <p style="flex:1 1 300px;min-width:0;margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.64)">YouTube videos and podcasts polished end-to-end. As fast as 2 days.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:26px 0;border-top:1px solid rgba(242,242,240,0.1)">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:14px;color:#ff4901;letter-spacing:0.06em;padding-top:5px">03</span>
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;min-width:0">
+            <h3 style="flex:0 1 260px;min-width:200px;font-family:var(--font-heading);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:-0.01em;margin:0">Podcasts</h3>
+            <p style="flex:1 1 300px;min-width:0;margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.64)">Full podcast production — multicam edits, clean audio, and short-form clips ready to post.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:26px 0;border-top:1px solid rgba(242,242,240,0.1)">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:14px;color:#ff4901;letter-spacing:0.06em;padding-top:5px">04</span>
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;min-width:0">
+            <h3 style="flex:0 1 260px;min-width:200px;font-family:var(--font-heading);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:-0.01em;margin:0">Motion &amp; Sound</h3>
+            <p style="flex:1 1 300px;min-width:0;margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.64)">Captions, motion graphics, color grade and sound design — built into every edit.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:26px 0;border-top:1px solid rgba(242,242,240,0.1);border-bottom:1px solid rgba(242,242,240,0.1)">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:14px;color:#ff4901;letter-spacing:0.06em;padding-top:5px">05</span>
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;min-width:0">
+            <h3 style="flex:0 1 260px;min-width:200px;font-family:var(--font-heading);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:-0.01em;margin:0">QC &amp; Revisions</h3>
+            <p style="flex:1 1 300px;min-width:0;margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.64)">Dedicated QC team plus Frame.io revisions returned within 24–48 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:84px 0 0">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+        <span style="width:34px;height:1px;background:#ff4901;flex:none"></span>
+        <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.34em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Recent cuts</span>
+      </div>
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.04;letter-spacing:-0.025em;text-transform:uppercase;margin:0 0 30px">Reels that hit</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px">
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1)">
+            <iframe ref="{{ reelRef0 }}" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/d5T-PwSQW9g?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=d5T-PwSQW9g&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" title="Reel 1" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" style="position:absolute;left:0;top:-14%;width:100%;height:128%;border:0;display:block;background:#12181c;pointer-events:none"></iframe>
+            <button type="button" onClick="{{ reelToggle0 }}" aria-label="Toggle sound" style="position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,73,1,0.6);background:rgba(11,16,19,0.78);backdrop-filter:blur(6px);color:#f2f2f0;cursor:pointer;padding:0" style-hover="background:#ff4901;color:#0b1013">
+              <sc-if value="{{ reelOff0 }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM245.66,154.34a8,8,0,0,1-11.32,11.32L216,147.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L204.69,136l-18.35-18.34a8,8,0,0,1,11.32-11.32L216,124.69l18.34-18.35a8,8,0,0,1,11.32,11.32L227.31,136Z"></path></svg></sc-if>
+              <sc-if value="{{ reelOn0 }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM192,96a8,8,0,0,1,6,2.7,47.81,47.81,0,0,1,0,58.6,8,8,0,0,1-12-10.6,31.82,31.82,0,0,0,0-37.4A8,8,0,0,1,192,96Zm34.32-28.32a8,8,0,0,1,11.31.3,95.8,95.8,0,0,1,0,120,8,8,0,1,1-11.61-11,79.830,79.83,0,0,0,0-98A8,8,0,0,1,226.32,67.68Z"></path></svg></sc-if>
+            </button>
+          </div>
+          
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1)">
+            <iframe ref="{{ reelRef1 }}" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LncUxMafKzs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=LncUxMafKzs&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" title="Reel 2" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" style="position:absolute;left:0;top:-14%;width:100%;height:128%;border:0;display:block;background:#12181c;pointer-events:none"></iframe>
+            <button type="button" onClick="{{ reelToggle1 }}" aria-label="Toggle sound" style="position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,73,1,0.6);background:rgba(11,16,19,0.78);backdrop-filter:blur(6px);color:#f2f2f0;cursor:pointer;padding:0" style-hover="background:#ff4901;color:#0b1013">
+              <sc-if value="{{ reelOff1 }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM245.66,154.34a8,8,0,0,1-11.32,11.32L216,147.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L204.69,136l-18.35-18.34a8,8,0,0,1,11.32-11.32L216,124.69l18.34-18.35a8,8,0,0,1,11.32,11.32L227.31,136Z"></path></svg></sc-if>
+              <sc-if value="{{ reelOn1 }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM192,96a8,8,0,0,1,6,2.7,47.81,47.81,0,0,1,0,58.6,8,8,0,0,1-12-10.6,31.82,31.82,0,0,0,0-37.4A8,8,0,0,1,192,96Zm34.32-28.32a8,8,0,0,1,11.31.3,95.8,95.8,0,0,1,0,120,8,8,0,1,1-11.61-11,79.830,79.83,0,0,0,0-98A8,8,0,0,1,226.32,67.68Z"></path></svg></sc-if>
+            </button>
+          </div>
+          
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1)">
+            <iframe ref="{{ reelRef2 }}" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0uGvtb4zTok?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=0uGvtb4zTok&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" title="Reel 3" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" style="position:absolute;left:0;top:-14%;width:100%;height:128%;border:0;display:block;background:#12181c;pointer-events:none"></iframe>
+            <button type="button" onClick="{{ reelToggle2 }}" aria-label="Toggle sound" style="position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,73,1,0.6);background:rgba(11,16,19,0.78);backdrop-filter:blur(6px);color:#f2f2f0;cursor:pointer;padding:0" style-hover="background:#ff4901;color:#0b1013">
+              <sc-if value="{{ reelOff2 }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM245.66,154.34a8,8,0,0,1-11.32,11.32L216,147.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L204.69,136l-18.35-18.34a8,8,0,0,1,11.32-11.32L216,124.69l18.34-18.35a8,8,0,0,1,11.32,11.32L227.31,136Z"></path></svg></sc-if>
+              <sc-if value="{{ reelOn2 }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM192,96a8,8,0,0,1,6,2.7,47.81,47.81,0,0,1,0,58.6,8,8,0,0,1-12-10.6,31.82,31.82,0,0,0,0-37.4A8,8,0,0,1,192,96Zm34.32-28.32a8,8,0,0,1,11.31.3,95.8,95.8,0,0,1,0,120,8,8,0,1,1-11.61-11,79.830,79.83,0,0,0,0-98A8,8,0,0,1,226.32,67.68Z"></path></svg></sc-if>
+            </button>
+          </div>
+          
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1)">
+            <iframe ref="{{ reelRef3 }}" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0WU19Dn4cug?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=0WU19Dn4cug&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" title="Reel 4" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" style="position:absolute;left:0;top:-14%;width:100%;height:128%;border:0;display:block;background:#12181c;pointer-events:none"></iframe>
+            <button type="button" onClick="{{ reelToggle3 }}" aria-label="Toggle sound" style="position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,73,1,0.6);background:rgba(11,16,19,0.78);backdrop-filter:blur(6px);color:#f2f2f0;cursor:pointer;padding:0" style-hover="background:#ff4901;color:#0b1013">
+              <sc-if value="{{ reelOff3 }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM245.66,154.34a8,8,0,0,1-11.32,11.32L216,147.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L204.69,136l-18.35-18.34a8,8,0,0,1,11.32-11.32L216,124.69l18.34-18.35a8,8,0,0,1,11.32,11.32L227.31,136Z"></path></svg></sc-if>
+              <sc-if value="{{ reelOn3 }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM192,96a8,8,0,0,1,6,2.7,47.81,47.81,0,0,1,0,58.6,8,8,0,0,1-12-10.6,31.82,31.82,0,0,0,0-37.4A8,8,0,0,1,192,96Zm34.32-28.32a8,8,0,0,1,11.31.3,95.8,95.8,0,0,1,0,120,8,8,0,1,1-11.61-11,79.830,79.83,0,0,0,0-98A8,8,0,0,1,226.32,67.68Z"></path></svg></sc-if>
+            </button>
+          </div>
+          
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof" style="padding:96px 0 0">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+        <span style="width:34px;height:1px;background:#ff4901;flex:none"></span>
+        <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.34em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Proof of work</span>
+      </div>
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.04;letter-spacing:-0.025em;text-transform:uppercase;margin:0 0 14px;max-width:22ch">Receipts, not promises</h2>
+      <p style="margin:0 0 40px;max-width:60ch;font-size:16px;line-height:1.65;color:rgba(242,242,240,0.7)">Every number below comes straight from YouTube Studio, for videos we scripted and edited. Tap any screenshot to see it full size.</p>
+      <div style="display:flex;flex-direction:column;gap:22px">
+<article style="padding:28px;border-radius:16px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#ff9a72">The channel · Lifetime, Jun 4, 2025 – Sep 9, 2026</span><h3 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(24px,3vw,32px);line-height:1.1;letter-spacing:-0.02em;text-transform:uppercase;margin:0">2,874,018 views on a channel we script and edit</h3></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px;padding:22px 0;border-top:1px solid rgba(242,242,240,0.1);border-bottom:1px solid rgba(242,242,240,0.1)">
+<div style="display:flex;flex-direction:column;gap:6px;padding-left:16px;border-left:2px solid #ff4901"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.4vw,38px);line-height:1;letter-spacing:-0.04em">2.9M</span><span style="font-family:var(--font-heading);font-weight:700;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Channel views</span></div><div style="display:flex;flex-direction:column;gap:6px;padding-left:16px;border-left:2px solid #ff4901"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.4vw,38px);line-height:1;letter-spacing:-0.04em">32.4M</span><span style="font-family:var(--font-heading);font-weight:700;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Thumbnail impressions</span></div><div style="display:flex;flex-direction:column;gap:6px;padding-left:16px;border-left:2px solid #ff4901"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.4vw,38px);line-height:1;letter-spacing:-0.04em">245.6K</span><span style="font-family:var(--font-heading);font-weight:700;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Watch hours</span></div><div style="display:flex;flex-direction:column;gap:6px;padding-left:16px;border-left:2px solid #ff4901"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.4vw,38px);line-height:1;letter-spacing:-0.04em">+12.6K</span><span style="font-family:var(--font-heading);font-weight:700;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Subscribers</span></div><div style="display:flex;flex-direction:column;gap:6px;padding-left:16px;border-left:2px solid #ff4901"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.4vw,38px);line-height:1;letter-spacing:-0.04em">$11,494</span><span style="font-family:var(--font-heading);font-weight:700;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,242,240,0.62)">Est. revenue</span></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px"><button type="button" onClick="{{ zoom.ch_overview }}" aria-label="Enlarge: Channel overview, 2.9M views" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/ch-overview.jpg" alt="Channel overview, 2.9M views" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.ch_content }}" aria-label="Enlarge: Channel content, 32.3M impressions" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/ch-content.jpg" alt="Channel content, 32.3M impressions" style="display:block;width:100%;height:auto"></button></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding-top:20px;border-top:1px solid rgba(242,242,240,0.1)"><span style="flex:1 1 260px;font-size:15px;line-height:1.5;color:rgba(242,242,240,0.74)">Almost 3 million views and $11.5K in ad revenue from one channel. Your channel could be next.</span><a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Book a call</a></div></article>
+
+<article style="padding:28px;border-radius:16px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:22px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:26px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#ff9a72">Video 01 · Long-form · Published Aug 10, 2025</span><h3 style="font-family:var(--font-heading);font-weight:800;font-size:22px;line-height:1.2;letter-spacing:-0.015em;margin:0">666,051 views on a single video</h3></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(48px,6vw,68px);line-height:0.95;letter-spacing:-0.045em;color:#ff4901">666.1K</span><span style="font-size:13px;color:rgba(242,242,240,0.7)">views · 652.8K more views than the channel’s usual</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 14px;padding-top:18px;border-top:1px solid rgba(242,242,240,0.1)"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">55.6K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Watch hours</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">+2.7K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Subscribers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">$3,212.92</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Est. revenue</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">8.5M</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Impressions</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">520.1K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Unique viewers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">4.5%</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Click-through rate</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px"><button type="button" onClick="{{ zoom.v1_overview }}" aria-label="Enlarge: 666K views overview" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v1-overview.jpg" alt="666K views overview" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.v1_reach }}" aria-label="Enlarge: 8.5M impressions reach" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v1-reach.jpg" alt="8.5M impressions reach" style="display:block;width:100%;height:auto"></button></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding-top:20px;border-top:1px solid rgba(242,242,240,0.1)"><span style="flex:1 1 260px;font-size:15px;line-height:1.5;color:rgba(242,242,240,0.74)">This one video earned $3,212.92 on its own. Let’s script yours.</span><a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Book a call</a></div></article>
+<article style="padding:28px;border-radius:16px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:22px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:26px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#ff9a72">Video 02 · Long-form · Published Jul 19, 2025</span><h3 style="font-family:var(--font-heading);font-weight:800;font-size:22px;line-height:1.2;letter-spacing:-0.015em;margin:0">169,009 views and 1.1K new subscribers</h3></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(48px,6vw,68px);line-height:0.95;letter-spacing:-0.045em;color:#ff4901">169K</span><span style="font-size:13px;color:rgba(242,242,240,0.7)">views · 166.7K more views than the channel’s usual</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 14px;padding-top:18px;border-top:1px solid rgba(242,242,240,0.1)"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">19.7K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Watch hours</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">+1.1K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Subscribers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">$794.39</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Est. revenue</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">2.3M</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Impressions</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">133.2K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Unique viewers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">4.8%</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Click-through rate</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px"><button type="button" onClick="{{ zoom.v2_overview }}" aria-label="Enlarge: 169K views overview" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v2-overview.jpg" alt="169K views overview" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.v2_reach }}" aria-label="Enlarge: 2.3M impressions reach" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v2-reach.jpg" alt="2.3M impressions reach" style="display:block;width:100%;height:auto"></button></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding-top:20px;border-top:1px solid rgba(242,242,240,0.1)"><span style="flex:1 1 260px;font-size:15px;line-height:1.5;color:rgba(242,242,240,0.74)">2.3M impressions from one upload. Want that reach?</span><a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Book a call</a></div></article>
+<article style="padding:28px;border-radius:16px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:22px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:26px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#ff9a72">Video 03 · Long-form · 17:47 · Published Jul 22, 2025</span><h3 style="font-family:var(--font-heading);font-weight:800;font-size:22px;line-height:1.2;letter-spacing:-0.015em;margin:0">“The Shocking Truth Behind Pratt &amp; …”</h3></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(48px,6vw,68px);line-height:0.95;letter-spacing:-0.045em;color:#ff4901">104.1K</span><span style="font-size:13px;color:rgba(242,242,240,0.7)">views · 100.6K more views than the channel’s usual</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 14px;padding-top:18px;border-top:1px solid rgba(242,242,240,0.1)"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">10.4K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Watch hours</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">+525</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Subscribers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">$212.20</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Est. revenue</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">1.3M</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Impressions</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">83K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Unique viewers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">4.9%</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Click-through rate</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px"><button type="button" onClick="{{ zoom.v3_overview }}" aria-label="Enlarge: 104K views overview" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v3-overview.jpg" alt="104K views overview" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.v3_reach }}" aria-label="Enlarge: 1.3M impressions reach" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v3-reach.jpg" alt="1.3M impressions reach" style="display:block;width:100%;height:auto"></button></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding-top:20px;border-top:1px solid rgba(242,242,240,0.1)"><span style="flex:1 1 260px;font-size:15px;line-height:1.5;color:rgba(242,242,240,0.74)">An 18-minute video people actually watched — 10.4K hours of it.</span><a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Book a call</a></div></article>
+<article style="padding:28px;border-radius:16px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:22px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:26px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#ff9a72">Video 04 · Long-form · 9:49 · Published Mar 6, 2026</span><h3 style="font-family:var(--font-heading);font-weight:800;font-size:22px;line-height:1.2;letter-spacing:-0.015em;margin:0">“Officer’s Quarters Revealed”</h3></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(48px,6vw,68px);line-height:0.95;letter-spacing:-0.045em;color:#ff4901">73.3K</span><span style="font-size:13px;color:rgba(242,242,240,0.7)">views · 72.8K more views than the channel’s usual</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 14px;padding-top:18px;border-top:1px solid rgba(242,242,240,0.1)"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">4.2K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Watch hours</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">+751</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Subscribers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">$387.84</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Est. revenue</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">868.1K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Impressions</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">64K</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Unique viewers</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">5.2%</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Click-through rate</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px"><button type="button" onClick="{{ zoom.v4_overview }}" aria-label="Enlarge: 73K views overview" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v4-overview.jpg" alt="73K views overview" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.v4_reach }}" aria-label="Enlarge: 868K impressions reach" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v4-reach.jpg" alt="868K impressions reach" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.v4_audience }}" aria-label="Enlarge: 64K unique viewers" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/v4-audience.jpg" alt="64K unique viewers" style="display:block;width:100%;height:auto"></button></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding-top:20px;border-top:1px solid rgba(242,242,240,0.1)"><span style="flex:1 1 260px;font-size:15px;line-height:1.5;color:rgba(242,242,240,0.74)">5.2% click-through — the highest of the batch. Book a call and we’ll show you how.</span><a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Book a call</a></div></article>
+
+<article style="padding:28px;border-radius:16px;background:#12181c;box-shadow:0 0 0 1px rgba(242,242,240,0.1);display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#ff9a72">Why it works</span><h3 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(24px,3vw,32px);line-height:1.1;letter-spacing:-0.02em;text-transform:uppercase;margin:0">YouTube pushes these videos for us</h3></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px;padding:22px 0;border-top:1px solid rgba(242,242,240,0.1);border-bottom:1px solid rgba(242,242,240,0.1)">
+<div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#ff4901">95.5%</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Impressions from YouTube recommending the content</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">64.7%</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Views from Browse features</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">1.5M</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Engaged views from impressions</span></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-family:var(--font-heading);font-weight:800;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#f2f2f0">7:43</span><span style="font-size:12px;line-height:1.4;color:rgba(242,242,240,0.62)">Avg. view duration from impressions</span></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px;align-items:start"><button type="button" onClick="{{ zoom.ch_funnel }}" aria-label="Enlarge: Impressions funnel" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/ch-funnel.jpg" alt="Impressions funnel" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.ch_traffic }}" aria-label="Enlarge: Traffic sources" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/ch-traffic.jpg" alt="Traffic sources" style="display:block;width:100%;height:auto"></button><button type="button" onClick="{{ zoom.ch_outliers }}" aria-label="Enlarge: Outlier videos chart" style="display:block;width:100%;padding:0;border:0;border-radius:10px;overflow:hidden;background:#f2f2f0;cursor:zoom-in;box-shadow:0 0 0 1px rgba(242,242,240,0.14)" style-hover="box-shadow:0 0 0 2px #ff4901"><img loading="lazy" decoding="async" src="assets/proof/ch-outliers.jpg" alt="Outlier videos chart" style="display:block;width:100%;height:auto"></button></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding-top:20px;border-top:1px solid rgba(242,242,240,0.1)"><span style="flex:1 1 260px;font-size:15px;line-height:1.5;color:rgba(242,242,240,0.74)">Scripts built to hold attention earn recommendations. Recommendations bring the views.</span><a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Book a call</a></div></article>
+      </div>
+
+      <div style="margin-top:40px;padding:30px;border-radius:16px;border:1px solid rgba(255,73,1,0.4);background:linear-gradient(135deg,rgba(255,73,1,0.10),rgba(255,73,1,0.02));display:flex;flex-wrap:wrap;align-items:center;gap:22px">
+        <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:clamp(20px,2.4vw,26px);line-height:1.15;letter-spacing:-0.015em;text-transform:uppercase">Want results like these on your channel?</span>
+          <span style="font-size:15px;line-height:1.6;color:rgba(242,242,240,0.72)">On the call we’ll map out the exact content plan we’d run for you. It’s free, and you keep the plan.</span>
+        </div>
+        <a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 28px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;flex:none" style-hover="background:#ff6b30">Get my free strategy</a>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeLb }}" style="position:fixed;inset:0;z-index:100;background:rgba(5,8,10,0.9);display:flex;align-items:center;justify-content:center;padding:32px;cursor:zoom-out">
+      {{ lbImg }}
+      <span style="position:absolute;top:18px;right:22px;font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#f2f2f0">Close ×</span>
+    </div>
+  </sc-if>
+
+  
+  <section style="padding:84px 0 0">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+        <span style="width:34px;height:1px;background:#ff4901;flex:none"></span>
+        <span style="font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:0.34em;text-transform:uppercase;color:rgba(242,242,240,0.62)">On the call</span>
+      </div>
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.04;letter-spacing:-0.025em;text-transform:uppercase;margin:0 0 30px">30 minutes, three outcomes</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px">
+        <div style="padding:22px;border-radius:12px;border:1px solid rgba(242,242,240,0.12);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:13px;color:#ff4901">01</span>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.72)">We audit what you’re already posting and where the drop-off is.</p>
+        </div>
+        <div style="padding:22px;border-radius:12px;border:1px solid rgba(242,242,240,0.12);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:13px;color:#ff4901">02</span>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.72)">You get a 30-day output plan — formats, volume, turnaround.</p>
+        </div>
+        <div style="padding:22px;border-radius:12px;border:1px solid rgba(242,242,240,0.12);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:13px;color:#ff4901">03</span>
+          <p style="margin:0;font-size:15px;line-height:1.65;color:rgba(242,242,240,0.72)">If we’re a fit, you start this week. If not, the plan is yours anyway.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:84px 0 0">
+    <div style="max-width:860px;margin:0 auto;padding:0 24px">
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.04;letter-spacing:-0.025em;text-transform:uppercase;margin:0 0 30px">Before you book</h2>
+      <div style="border-top:1px solid rgba(242,242,240,0.1)">
+        <button type="button" onClick="{{ toggle0 }}" style="width:100%;display:flex;align-items:center;gap:20px;background:none;border:0;padding:22px 0;cursor:pointer;color:#f2f2f0;text-align:left;font-family:var(--font-heading);font-weight:600;font-size:17px" style-hover="color:#ff9a72">
+          <span style="flex:1">What happens when I don’t like the video?</span>
+          <span style="width:26px;height:26px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(242,242,240,0.24);color:#ff4901;font-size:16px;line-height:1">{{ sign0 }}</span>
+        </button>
+        <sc-if value="{{ open0 }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0;padding:0 46px 24px 0;font-size:15px;line-height:1.7;color:rgba(242,242,240,0.66)">You send notes in Frame.io and we revise until it’s right — unlimited revisions, returned within 24–48 hours.</p>
+        </sc-if>
+      </div>
+      <div style="border-top:1px solid rgba(242,242,240,0.1)">
+        <button type="button" onClick="{{ toggle1 }}" style="width:100%;display:flex;align-items:center;gap:20px;background:none;border:0;padding:22px 0;cursor:pointer;color:#f2f2f0;text-align:left;font-family:var(--font-heading);font-weight:600;font-size:17px" style-hover="color:#ff9a72">
+          <span style="flex:1">What if I already have an editor?</span>
+          <span style="width:26px;height:26px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(242,242,240,0.24);color:#ff4901;font-size:16px;line-height:1">{{ sign1 }}</span>
+        </button>
+        <sc-if value="{{ open1 }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0;padding:0 46px 24px 0;font-size:15px;line-height:1.7;color:rgba(242,242,240,0.66)">Keep them. Most clients start by handing us the overflow — the short-form volume or the podcast cutdowns — and scale from there.</p>
+        </sc-if>
+      </div>
+      <div style="border-top:1px solid rgba(242,242,240,0.1)">
+        <button type="button" onClick="{{ toggle2 }}" style="width:100%;display:flex;align-items:center;gap:20px;background:none;border:0;padding:22px 0;cursor:pointer;color:#f2f2f0;text-align:left;font-family:var(--font-heading);font-weight:600;font-size:17px" style-hover="color:#ff9a72">
+          <span style="flex:1">What if I want to cancel?</span>
+          <span style="width:26px;height:26px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(242,242,240,0.24);color:#ff4901;font-size:16px;line-height:1">{{ sign2 }}</span>
+        </button>
+        <sc-if value="{{ open2 }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0;padding:0 46px 24px 0;font-size:15px;line-height:1.7;color:rgba(242,242,240,0.66)">It’s month-to-month. Cancel any time before your next cycle — no lock-in, and every delivered file stays yours.</p>
+        </sc-if>
+      </div>
+      <div style="border-top:1px solid rgba(242,242,240,0.1);border-bottom:1px solid rgba(242,242,240,0.1)">
+        <button type="button" onClick="{{ toggle3 }}" style="width:100%;display:flex;align-items:center;gap:20px;background:none;border:0;padding:22px 0;cursor:pointer;color:#f2f2f0;text-align:left;font-family:var(--font-heading);font-weight:600;font-size:17px" style-hover="color:#ff9a72">
+          <span style="flex:1">Who’s actually behind the edits?</span>
+          <span style="width:26px;height:26px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(242,242,240,0.24);color:#ff4901;font-size:16px;line-height:1">{{ sign3 }}</span>
+        </button>
+        <sc-if value="{{ open3 }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0;padding:0 46px 24px 0;font-size:15px;line-height:1.7;color:rgba(242,242,240,0.66)">A dedicated Clicktick Studios team — an assigned lead editor, a motion and sound pass, and a QC reviewer before anything reaches you.</p>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" style="position:relative;margin-top:96px;border-top:1px solid rgba(242,242,240,0.1);overflow:hidden">
+    <div style="position:absolute;inset:auto 0 -220px 0;height:520px;background:radial-gradient(600px 300px at 50% 100%,rgba(255,73,1,0.22),transparent 70%);pointer-events:none"></div>
+    <div style="max-width:1000px;margin:0 auto;padding:100px 24px 112px;position:relative;text-align:center;display:flex;flex-direction:column;align-items:center">
+      <h2 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(34px,5.2vw,64px);line-height:0.98;letter-spacing:-0.03em;text-transform:uppercase;margin:0;max-width:20ch">Ready to stop editing and start posting?</h2>
+      <p style="margin:22px 0 0;max-width:46ch;font-size:17px;line-height:1.6;color:rgba(242,242,240,0.68)">Book a free call and let’s get your content engine running.</p>
+      <a href="https://cal.com/clicktick-studios-ewusht/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;height:58px;padding:0 34px;margin-top:34px;border-radius:8px;background:#ff4901;color:#0b1013;font-family:var(--font-heading);font-weight:800;font-size:15px;letter-spacing:0.06em;text-transform:uppercase" style-hover="background:#ff6b30">Book my free strategy call</a>
+      <span style="margin-top:14px;font-size:13px;color:rgba(242,242,240,0.62)">Limited onboarding slots each month</span>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(242,242,240,0.08);background:#0e1417">
+    <div style="max-width:1000px;margin:0 auto;padding:26px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:26px;height:26px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none">
+          <img src="assets/logo-orange.png" alt="" style="width:15px;height:auto">
+        </span>
+        <span style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:0.14em;text-transform:uppercase">Clicktick Studios</span>
+      </div>
+      <span style="margin-left:auto;font-size:13px;color:rgba(242,242,240,0.62)">© 2026 Clicktick Studios. All rights reserved.</span>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { open: 0, playing: false, t: 0, lb: null, muted: true, reelOn: -1 };
+  reelRefs = [0,1,2,3].map(() => React.createRef());
+  toggleReel(i) {
+    const next = this.state.reelOn === i ? -1 : i;
+    this.reelRefs.forEach((r, j) => { const w = r.current && r.current.contentWindow; if (!w) return; const send = (func, args = []) => w.postMessage(JSON.stringify({ event: 'command', func, args }), '*'); if (j === next) { send('unMute'); send('setVolume', [100]); send('playVideo'); } else send('mute'); });
+    if (next !== -1 && !this.state.muted) { this.ytCmd('mute'); this.setState({ muted: true }); }
+    this.setState({ reelOn: next });
+  }
+  reelVals() {
+    const v = {};
+    for (let i = 0; i < 4; i++) { v['reelRef' + i] = this.reelRefs[i]; v['reelToggle' + i] = () => this.toggleReel(i); v['reelOn' + i] = this.state.reelOn === i; v['reelOff' + i] = this.state.reelOn !== i; }
+    return v;
+  }
+  ytRef = React.createRef();
+  componentWillUnmount() { clearInterval(this._iv); }
+  ytCmd(func, args = []) {
+    const w = this.ytRef.current && this.ytRef.current.contentWindow;
+    if (w) w.postMessage(JSON.stringify({ event: 'command', func, args }), '*');
+  }
+  toggleAudio() {
+    const muted = !this.state.muted;
+    if (muted) this.ytCmd('mute');
+    else { this.ytCmd('unMute'); this.ytCmd('setVolume', [100]); this.ytCmd('playVideo'); }
+    this.setState({ muted });
+  }
+  audioVals() {
+    return {
+      ytRef: this.ytRef,
+      toggleAudio: () => this.toggleAudio(),
+      isMuted: this.state.muted,
+      isUnmuted: !this.state.muted
+    };
+  }
+  playVsl() {
+    if (this.state.playing) { clearInterval(this._iv); this.setState({ playing: false }); return; }
+    this.setState({ playing: true });
+    this._iv = setInterval(() => this.setState(s => (s.t >= 372 ? (clearInterval(this._iv), { playing: false, t: 0 }) : { t: s.t + 1 })), 1000);
+  }
+  fmt(s) { return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
+  renderVals() {
+    const v = {
+      playVsl: () => this.playVsl(),
+      elapsed: this.fmt(this.state.t),
+      progressPct: (this.state.t / 372 * 100).toFixed(1) + '%',
+      ...this.audioVals(),
+      ...this.reelVals(),
+      lbOpen: !!this.state.lb,
+      lbImg: this.state.lb ? React.createElement('img', { src: 'assets/proof/' + this.state.lb + '.jpg', alt: 'Enlarged screenshot', style: { maxWidth: 'min(1200px,100%)', maxHeight: '100%', borderRadius: 10, boxShadow: '0 30px 80px rgba(0,0,0,0.6)' } }) : null,
+      lbSrc: this.state.lb ? 'assets/proof/' + this.state.lb + '.jpg' : '',
+      closeLb: () => this.setState({ lb: null }),
+      zoom: {}
+    };
+    ["v4-audience","v4-reach","v4-overview","v3-overview","v3-reach","v2-overview","v2-reach","v1-overview","v1-reach","ch-overview","ch-content","ch-traffic","ch-funnel","ch-outliers"].forEach(k => { v.zoom[k.replace('-', '_')] = () => this.setState({ lb: k }); });
+    for (let i = 0; i < 4; i++) {
+      v['open' + i] = this.state.open === i;
+      v['sign' + i] = this.state.open === i ? '\u2212' : '+';
+      v['toggle' + i] = () => this.setState(s => ({ open: s.open === i ? -1 : i }));
+    }
+    return v;
+  }
+}
+
+</script>
+</body>
+</html>
